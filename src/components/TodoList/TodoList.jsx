@@ -1,4 +1,3 @@
-import lib from 'prop-styles';
 
 const TodoList = ({ todos,onDeleteTodo }) => (
   <ul style={{
