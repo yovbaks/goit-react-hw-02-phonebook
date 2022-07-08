@@ -1,4 +1,4 @@
-import Container from "./Container/Container";
+import Phonebook from "./Phonebook";
 export const App = () => {
   return (
     <div
@@ -7,12 +7,13 @@ export const App = () => {
         // display: 'flex',
         // justifyContent: 'center',
         // alignItems: 'center',
-        fontSize: 40,
+        fontSize: 20,
         color: '#010101',
         margin: "5px",
       }}
     >
-      <Container/>
+      <Phonebook/>
+   
     </div>
   );
 };
