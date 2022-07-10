@@ -24,16 +24,15 @@ export class App extends Component {
       number,
     };
 
-    
     const findContact = this.state.contacts.find(contact =>
-			contact.name.toLowerCase().includes(name.toLowerCase())
-		);
+      contact.name.toLowerCase().includes(name.toLowerCase())
+    );
 
-		findContact
-			? alert(`${name} is already in contact`)
-			: this.setState(({ contacts }) => ({
-					contacts: [contact, ...contacts],
-			  }));
+    findContact
+      ? alert(`${name} is already in contact`)
+      : this.setState(({ contacts }) => ({
+          contacts: [contact, ...contacts],
+        }));
   };
 
   formSubmitHandler = data => {
