@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Item = styled.li`
 &:not(:last-child){
 	margin-bottom: 10px;
-    margin:0px;
+    
 }
 display: flex;
 align-items: center;
@@ -11,8 +11,8 @@ font-size: 22px;
 `;
 
 export const Contact = styled.p`
-
-margin-right:10px;
+margin-top:0px;
+margin-right:15px;
 margin-bottom:5px;
 `;
 
