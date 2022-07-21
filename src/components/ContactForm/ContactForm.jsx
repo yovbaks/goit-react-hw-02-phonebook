@@ -2,18 +2,16 @@ import { Form, Label, Input, Button } from './ContactForm.styled';
 import { Component } from 'react';
 
 class ContactForm extends Component {
- 
-
   state = {
     name: '',
-      number: '',
-    id:'',
+    number: '',
+    id: '',
   };
 
   handleSubmit = event => {
     event.preventDefault();
-      this.props.onSubmit(this.state.name, this.state.number);
-      this.reset();
+    this.props.onSubmit(this.state.name, this.state.number);
+    this.reset();
   };
 
   handleChange = event => {
@@ -21,13 +19,11 @@ class ContactForm extends Component {
     this.setState({
       [name]: value,
     });
-    };
-    
-    reset = () => {
-        this.setState({name:'',number:''})
-    }
+  };
 
- 
+  reset = () => {
+    this.setState({ name: '', number: '' });
+  };
 
   render() {
     // const { contacts,filter } = this.state;
